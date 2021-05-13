@@ -1,0 +1,353 @@
+@import "./style.css";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 10px 10px !important;
+  box-shadow: -2px 7px 14px -5px rgba(110, 110, 110, 0.61);
+}
+
+.blog-logo svg {
+  height: 50px !important;
+  fill: var(--light-blue);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul > li {
+  list-style: none;
+  padding-right: 30px;
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+nav ul > li a {
+  color: var(--light-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul > li a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+nav ul > li a:active {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+nav ul > li:last-of-type {
+  padding-right: 0;
+}
+
+header.main-post-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+}
+
+.blog-heading {
+  margin-bottom: 20px;
+}
+
+.blog-heading h1 {
+  color: var(--dark-blue);
+}
+
+.blog-heading p {
+  color: var(--light-blue);
+}
+
+.author-info p {
+  color: var(--grey);
+}
+
+.author-info p a {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.author-info p a:hover {
+  text-decoration: underline;
+}
+
+section.post-hero-image {
+  padding: 0;
+}
+
+.hero-image {
+  height: 70vh;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 60px 50px;
+}
+
+.blog-content h2 {
+  color: var(--dark-blue);
+}
+
+.blog-content p a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog-content p a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+.blog-content p,
+blockquote {
+  color: var(--grey);
+  line-height: 2em;
+}
+
+.blog-content blockquote {
+  border-left: 3px solid var(--light-blue);
+  padding: 20px;
+  font-style: italic;
+}
+
+.blog-content ul.point-numbering {
+  color: var(--grey);
+  line-height: 2em;
+  padding-left: 40px;
+  list-style: square;
+}
+
+.blog-content .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-content .intersection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 0px 30px;
+  align-items: center;
+}
+
+.intersection .post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.intersection .post-image figcaption {
+  color: var(--grey);
+  font-style: italic;
+  text-align: center;
+}
+
+.article-share {
+  display: flex;
+  align-items: center;
+}
+
+.article-share p {
+  margin-right: 10px;
+  color: var(--light-blue);
+  font-weight: 500;
+}
+
+.article-share .share-icons {
+  display: flex;
+  align-items: center;
+}
+
+.share-icons .article-social-link {
+  padding-right: 20px;
+}
+
+.share-icons .article-social-link a {
+  color: var(--light-blue);
+}
+
+.share-icons .article-social-link a:hover {
+  color: var(--dark-blue);
+}
+
+.share-icons .article-social-link svg {
+  width: 30px;
+}
+
+.post-button-section {
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.post-button-section button {
+  border: 2px solid var(--light-blue);
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--light-blue);
+}
+
+.post-button-section button:hover {
+  border: 2px solid var(--light-blue);
+  background-color: var(--light-blue);
+  color: var(--white);
+  transition: all 0.2s ease-in;
+}
+
+.post-button-section button:first-of-type {
+  margin-right: 20px;
+}
+
+.subscribe-section {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 0px 15vh 0px;
+}
+
+.subscribe-section .subscribe-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-section .subscribe-header h2 {
+  color: var(--dark-blue);
+  font-size: 40px;
+}
+
+.subscribe-section .subscribe-header p {
+  color: var(--light-blue);
+}
+
+.subscribe-section .form-container form {
+  display: grid;
+  grid-template-columns: 400px 130px;
+  grid-gap: 0px 20px;
+}
+
+.subscribe-section .form-container form input {
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 10px;
+  color: var(--light-blue);
+}
+
+.subscribe-section .form-container form input::placeholder {
+  color: var(--light-blue);
+  font-style: italic;
+}
+
+.subscribe-section .form-container form button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.social-link {
+  padding: 15px;
+}
+
+.social .social-media-links svg {
+  width: 30px;
+}
+
+.social .social-media-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.copyright span {
+  color: red;
+  font-size: 22px;
+}
+
+.copyright a {
+  color: var(--light);
+}
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+  .blog-content .intersection {
+    display: block;
+  }
+
+  .blog-content {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 779px) {
+  header.main-post-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .subscribe-section .form-container form {
+    display: block;
+    text-align: center;
+  }
+
+  .subscribe-section .form-container form input {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-section .form-container form button {
+    width: 40%;
+    height: 42px;
+  }
+}
+
+@media (max-width: 420px) {
+  .article-share {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  nav ul > li {
+    padding-right: 10px;
+  }
+}
