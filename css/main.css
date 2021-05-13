@@ -1,57 +1,13 @@
 @import './style.css';
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: -2px 7px 14px -5px rgba(56,56,56,0.58);
-    padding: 10px 30px 10px 10px !important;
-}
-
-.blog-logo svg{
-    height:50px  !important;
-    fill:var(--light-blue);
-}
-
-
-nav ul{
-    display:flex;
-    justify-content: space-between;
-}
-
-nav ul > li{
-    list-style: none;
-    padding-right:30px;
-    color: var(--light-blue);
-    cursor: pointer;
-}
-
-nav ul > li a{
-    color: var(--light-blue);
-    cursor: pointer;
-    text-decoration:none;
-}
-
-nav ul > li a:hover{
-    color: var(--dark-blue);
-    text-decoration:underline;
-}
-
-nav ul > li a:active{
-    color: var(--dark-blue);
-    text-decoration:underline;
-}
-
-nav ul > li:last-of-type{
-    padding-right: 0;
-}
+@import './nav.css';
+@import './subscribe.css';
+@import './footer.css';
 
 header.main-blog-header{
     background-image: url('../images/sprinkle-bg.svg');
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .hero-heading{
@@ -81,6 +37,8 @@ header.main-blog-header{
     justify-items:center;
     grid-gap:40px 20px;
     padding-bottom:100px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .blog-card{
@@ -159,90 +117,7 @@ header.main-blog-header{
     font-weight:500;
 }
 
-.subscribe-section{
-    background-color: #FFFFFF;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:15vh 0px 15vh 0px
-}
 
-.subscribe-section .subscribe-header{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.subscribe-section .subscribe-header h2{
-    color:var(--dark-blue);
-    font-size: 40px;
-}
-
-.subscribe-section .subscribe-header p{
-    color:var(--light-blue);
-}
-
-.subscribe-section .form-container form{
-    display: grid;
-    grid-template-columns: 400px 130px;
-    grid-gap:0px 20px;
-}
-
-.subscribe-section .form-container form input{
-    border:2px solid var(--light-blue);
-    border-radius:10px;
-    height:45px;
-    padding-left:10px;
-    color:var(--light-blue);
-}
-
-.subscribe-section .form-container form input::placeholder{
-    color:var(--light-blue);
-    font-style: italic;
-}
-
-.subscribe-section .form-container form button{
-    background-color: var(--light-blue);
-    color:var(--white);
-    border:none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-footer{
-    background-color: var(--dark-blue);
-    color:var(--white);
-    padding:5vh 0 5vh 0;
-    text-align: center;
-}
-
-.social-media-links{
-    display: flex;
-    justify-content: center;
-    padding:20px 0px;
-}
-
-.social-link{
-    padding:15px;
-}
-
-.social .social-media-links svg{
-    width:30px;
-}
-
-.social .social-media-links a{
-    text-decoration: none;
-    color:var(--white);
-}
-
-.copyright a{
-    color:var(--light);
-}
-
-.copyright span{
-    color:red;
-    font-size:22px;
-}
 
 /* Media Queries */
 
@@ -264,8 +139,11 @@ footer{
 }
 
 @media(max-width:415px){
+  
     .blog-cards-section{
         display: block;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .blog-card{

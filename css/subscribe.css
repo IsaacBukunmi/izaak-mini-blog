@@ -1,0 +1,49 @@
+.subscribe-section {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 20px 15vh 20px;
+}
+
+.subscribe-section .subscribe-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-section .subscribe-header h2 {
+  color: var(--dark-blue);
+  font-size: 40px;
+}
+
+.subscribe-section .subscribe-header p {
+  color: var(--light-blue);
+}
+
+.subscribe-section .form-container form {
+  display: grid;
+  grid-template-columns: 400px 130px;
+  grid-gap: 0px 20px;
+}
+
+.subscribe-section .form-container form input {
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 10px;
+  color: var(--light-blue);
+}
+
+.subscribe-section .form-container form input::placeholder {
+  color: var(--light-blue);
+  font-style: italic;
+}
+
+.subscribe-section .form-container form button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
